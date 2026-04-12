@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.3.3] - 2026-04-12
 
 ### Fixed
-- Remove the blank footer status line when no MCP servers are configured by clearing the MCP status entry instead of setting it to an empty string.
+- Remove the blank footer status line when no MCP servers are configured by clearing the MCP status entry instead of setting it to an empty string. Thanks @HazAT for PR #27.
 
 ## [2.3.2] - 2026-04-11
 
