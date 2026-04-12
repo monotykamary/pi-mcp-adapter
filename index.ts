@@ -207,20 +207,6 @@ export default function mcpAdapter(pi: ExtensionAPI) {
     },
   });
 
-  // /mcp-auth-callback command (deprecated - now automatic)
-  pi.registerCommand("mcp-auth-callback", {
-    description: "[Deprecated] OAuth is now automatic - use /mcp-auth <server> instead",
-    handler: async (_args, ctx) => {
-      if (ctx.hasUI) {
-        ctx.ui.notify(
-          "OAuth authentication is now automatic!\n" +
-          "Use /mcp-auth <server-name> to authenticate. The callback is handled automatically.",
-          "info"
-        );
-      }
-    },
-  });
-
   pi.registerTool({
     name: "mcp",
     label: "MCP",
